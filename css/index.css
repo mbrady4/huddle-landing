@@ -1,0 +1,202 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+.top-section {
+  background: url(../images/bg-hero-desktop.svg);
+  max-width: 100%;
+}
+.top-section nav {
+  padding: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1280px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.top-section nav .button {
+  padding: 1rem 6rem;
+  border-radius: 20px;
+  color: black;
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  text-decoration: none;
+  box-shadow: 0px 1px 6px 2px #b8b2b2;
+}
+.hero {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1280px;
+  padding-right: 10px;
+  padding-left: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.hero div {
+  max-width: 48%;
+}
+.hero div h1 {
+  font-size: 4rem;
+  color: hsl(192, 100%, 9%);
+  line-height: 5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  padding: 7rem 0 2rem 0;
+  width: 90%;
+}
+.hero div p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  width: 90%;
+  padding-bottom: 5rem;
+}
+.hero div a {
+  padding: 2rem 8rem;
+  border-radius: 40px;
+  color: white;
+  background-color: hsl(322, 100%, 66%);
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  text-decoration: none;
+  box-shadow: 0px 1px 3px 2px #b8b2b2;
+}
+.hero div img {
+  max-width: 100%;
+}

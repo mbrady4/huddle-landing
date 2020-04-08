@@ -1,0 +1,44 @@
+.hero {
+    .wrapper();
+    display:flex;
+    justify-content: space-between;
+
+    div {
+        max-width: 48%;
+
+        h1 {
+            font-size: 4rem;
+            color: @dark-cyan;
+            line-height: 5rem;
+            font-family: @header-font;
+            font-weight: normal;
+            padding: 7rem 0 2rem 0;
+            width: 90%;
+        }
+
+        p {
+            font-family: @body-font;
+            font-size: @body-size;
+            line-height: 2.2rem;
+            width: 90%;
+            padding-bottom: 5rem;
+        }
+
+        a {
+            padding: 2rem 8rem;
+            border-radius: 40px; 
+            color: white;
+            background-color: @primary;
+            font-family: @header-font;
+            font-size: 1.2rem;
+            line-height: 1.8rem;
+            text-decoration: none;
+            box-shadow: 0px 1px 3px 2px @gray;
+
+        }
+
+        img {
+            max-width:100%;
+        }
+    }
+}
