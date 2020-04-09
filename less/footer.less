@@ -1,0 +1,75 @@
+footer {
+    padding-top: 20rem;
+    padding-bottom: 10rem;
+    background-color: @dark-cyan;
+
+    .footer-wrapper {
+        .wrapper();
+        display:block; 
+
+        img {
+            padding-bottom: 2rem;
+        }
+
+        .footer-content {
+            display:flex;
+            align-items:flex-start;
+            justify-content: space-between;
+            flex-grow:5;
+            font-family: @body-font;
+
+            .footer-big-col {
+                flex-grow: 2;
+                font-size: 1.4rem;
+                line-height: 2rem;
+                color:white;
+                max-width: 300px;
+                padding-left:3rem;
+
+                li:nth-child(1) {
+                    list-style-image: url("../images/icon-location.svg");
+                    padding-left:1rem;
+                }
+
+                li:nth-child(2) {
+                    list-style-image: url("../images/icon-phone.svg");
+                    padding: 2rem 0;
+                    padding-left:1rem;
+                }
+                li:nth-child(3) {
+                    list-style-image: url("../images/icon-email.svg");
+                    padding-left:1rem;
+                }
+            }
+
+            .footer-sm-col {
+                flex-grow: 1;
+                padding-left: 5%;
+                
+                .footer-link {
+                    display:flex;
+                    flex-direction:column;
+                    text-align:left;
+                    width:100%;
+                    padding: 1rem;
+                    text-decoration: none;
+                    font-size: 1.6rem;
+                    color: white;
+                }
+                .icon {
+                    flex-direction:row;
+                    max-width:25%;
+                    padding: 1rem;
+                }
+            }
+        }
+
+        p {
+            float:right;
+            padding-top: 2rem;
+            font-family: @body-font;
+            font-size:0.8rem;
+            color: white;
+        }
+    }
+}
