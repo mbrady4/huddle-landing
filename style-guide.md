@@ -20,7 +20,14 @@ The designs were created to the following widths:
 - Grayish Blue: hsl(208, 11%, 55%)
 
 ## Typography
-
+background: #FF52C1;
+box-shadow: 2px 3px 6px 1px rgba(255,82,193,0.17);
+border-radius: 28px;
+font-family: Helvetica;
+font-size: 14px;
+color: #FFFFFF;
+letter-spacing: 0;
+text-align: center;
 ### Body Copy
 
 - Font size: 18px

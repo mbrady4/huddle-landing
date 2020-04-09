@@ -133,10 +133,13 @@ html {
   font-size: 62.5%;
 }
 .top-section {
-  background: url(../images/bg-hero-desktop.svg);
-  max-width: 100%;
+  background-color: #EDFBFF;
 }
-.top-section nav {
+.top-section .background-img {
+  background: url(../images/bg-hero-desktop.svg);
+  width: 100%;
+}
+.top-section .background-img nav {
   padding: 3rem;
   display: flex;
   justify-content: space-between;
@@ -147,12 +150,13 @@ html {
   padding-right: 10px;
   padding-left: 10px;
 }
-.top-section nav .button {
+.top-section .background-img nav .button {
   padding: 1rem 6rem;
   border-radius: 20px;
   color: black;
   background-color: white;
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
   font-size: 1.2rem;
   line-height: 1.8rem;
   text-decoration: none;
@@ -167,6 +171,7 @@ html {
   display: flex;
   justify-content: space-between;
   margin-top: 3rem;
+  padding-bottom: 3rem;
 }
 .hero div {
   max-width: 48%;
@@ -176,12 +181,13 @@ html {
   color: hsl(192, 100%, 9%);
   line-height: 5rem;
   font-family: "Poppins", sans-serif;
-  font-weight: normal;
+  font-weight: 400;
   padding: 3rem 0 2rem 0;
   width: 90%;
 }
 .hero div p {
   font-family: "Open Sans", sans-serif;
+  font-weight: 400;
   font-size: 1.8rem;
   line-height: 2.2rem;
   width: 90%;
@@ -193,6 +199,7 @@ html {
   color: white;
   background-color: hsl(322, 100%, 66%);
   font-family: "Poppins", sans-serif;
+  font-weight: 700;
   font-size: 1.2rem;
   line-height: 1.8rem;
   text-decoration: none;
@@ -230,6 +237,7 @@ html {
 .benefits-grid .row .body h2 {
   font-size: 3rem;
   font-family: "Poppins", sans-serif;
+  font-weight: 400;
   padding-left: 20%;
   padding-bottom: 2rem;
   width: 100%;
@@ -240,6 +248,7 @@ html {
   font-size: 1.4rem;
   color: hsl(208, 11%, 55%);
   font-family: "Open Sans", sans-serif;
+  font-weight: 400;
   line-height: 1.8rem;
 }
 .benefits-grid .row .figure {
@@ -260,20 +269,22 @@ html {
   position: relative;
   top: 12rem;
   text-align: center;
-  padding-bottom: 3rem;
+  padding-bottom: 6rem;
 }
 .benefits-grid .cta-offset h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-family: "Poppins", sans-serif;
+  font-weight: 400;
   padding: 4rem 0 5rem 0;
 }
 .benefits-grid .cta-offset a {
-  padding: 1.5rem 8rem;
+  padding: 2rem 8rem;
   border-radius: 40px;
   color: white;
   background-color: hsl(322, 100%, 66%);
-  font-family: "Poppins", sans-serif;
-  font-size: 2rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
   line-height: 2rem;
   text-decoration: none;
   box-shadow: 0px 1px 3px 2px #b8b2b2;
@@ -300,6 +311,7 @@ footer .footer-wrapper .footer-content {
   justify-content: space-between;
   flex-grow: 5;
   font-family: "Open Sans", sans-serif;
+  font-weight: 400;
 }
 footer .footer-wrapper .footer-content .footer-big-col {
   flex-grow: 2;
@@ -345,6 +357,7 @@ footer .footer-wrapper p {
   float: right;
   padding-top: 2rem;
   font-family: "Open Sans", sans-serif;
+  font-weight: 400;
   font-size: 0.8rem;
   color: white;
 }
