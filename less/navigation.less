@@ -5,12 +5,22 @@
         background: url(../images/bg-hero-desktop.svg);
         width:100%; 
 
+        @media @mobile {
+            background: url(../images/bg-hero-mobile.svg);
+        }
+
         nav {
             padding: 3rem;
             display:flex;
             justify-content: space-between;
             align-content:center;
             .wrapper();
+
+            .logo {
+                @media @mobile {
+                    width: 200px;
+                }
+            }
 
             .button {
                 padding: 1rem 6rem;
@@ -23,6 +33,12 @@
                 line-height: 1.8rem;
                 text-decoration: none;
                 box-shadow: 0px 1px 6px 2px @gray;
+
+                @media @mobile {
+                    padding: 1rem 3rem;
+                    font-size: 1rem;
+                    line-height: 1.6rem;
+                }
             }
         }
     }

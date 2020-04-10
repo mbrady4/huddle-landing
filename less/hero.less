@@ -5,8 +5,18 @@
     margin-top: 3rem;
     padding-bottom: 3rem;
 
+    @media @mobile {
+        flex-direction:column;
+        align-items: center;
+    }
+
     div {
         max-width: 48%;
+
+        @media @mobile {
+            max-width:90%;
+            text-align:center;
+        }
 
         h1 {
             font-size: 4rem;
@@ -16,6 +26,12 @@
             font-weight: @header-weight;
             padding: 3rem 0 2rem 0;
             width: 90%;
+
+            @media @mobile {
+                font-size: 3rem;
+                width:100%;
+                padding: 0 0 2rem 0;
+            }
         }
 
         p {
@@ -25,6 +41,10 @@
             line-height: 2.2rem;
             width: 90%;
             padding-bottom: 5rem;
+
+            @media @mobile {
+                width:100%;
+            }
         }
 
         a {
@@ -43,6 +63,10 @@
 
         img {
             max-width:100%;
+
+            @media @mobile {
+                padding-top: 5rem;
+            }
         }
     }
 }
