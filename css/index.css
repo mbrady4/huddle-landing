@@ -162,15 +162,15 @@ html {
 }
 .top-section .background-img nav .button {
   padding: 1rem 6rem;
-  border-radius: 20px;
-  color: black;
+  border-radius: 24px;
+  color: #00252E;
   background-color: white;
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-size: 1.2rem;
   line-height: 1.8rem;
   text-decoration: none;
-  box-shadow: 0px 1px 6px 2px #b8b2b2;
+  box-shadow: 0 3px 11px 0 rgba(0, 0, 0, 0.1);
 }
 @media (max-width:600px) {
   .top-section .background-img nav .button {
@@ -208,8 +208,8 @@ html {
 }
 .hero div h1 {
   font-size: 4rem;
-  color: hsl(192, 100%, 9%);
-  line-height: 5rem;
+  color: #00252E;
+  line-height: 6rem;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   padding: 0rem 0 2rem 0;
@@ -232,6 +232,7 @@ html {
 }
 .hero div p {
   font-family: "Open Sans", sans-serif;
+  color: #00252E;
   font-weight: 400;
   font-size: 1.8rem;
   line-height: 2.2rem;
@@ -260,7 +261,7 @@ html {
   font-size: 1.2rem;
   line-height: 1.8rem;
   text-decoration: none;
-  box-shadow: 0px 1px 3px 2px #b8b2b2;
+  box-shadow: 2px 3px 6px 1px rgba(255, 82, 193, 0.17);
 }
 .hero div img {
   max-width: 100%;
@@ -290,8 +291,8 @@ html {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  border-radius: 10px;
-  box-shadow: 0px 0px 4px 8px hsl(193, 100%, 96%);
+  border-radius: 16px;
+  box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.07);
   margin: 8rem 0;
 }
 @media (max-width:900px) {
@@ -328,10 +329,11 @@ html {
   }
 }
 .benefits-grid .row .body h2 {
-  font-size: 3rem;
+  font-size: 2.8rem;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  padding-left: 20%;
+  color: #00252E;
+  padding-left: 10%;
   padding-bottom: 2rem;
   width: 100%;
 }
@@ -341,13 +343,13 @@ html {
   }
 }
 .benefits-grid .row .body p {
-  padding-left: 20%;
+  padding-left: 10%;
   width: 100%;
-  font-size: 1.4rem;
-  color: hsl(208, 11%, 55%);
+  font-size: 1.6rem;
+  color: #808E9A;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  line-height: 1.8rem;
+  line-height: 2.2rem;
 }
 @media (max-width:600px) {
   .benefits-grid .row .body p {
@@ -367,8 +369,8 @@ html {
   margin-left: auto;
   margin-right: auto;
   max-width: 60%;
-  box-shadow: 0px 0px 2px 2px hsl(193, 100%, 96%);
-  border-radius: 10px;
+  box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.07);
+  border-radius: 15px;
   background-color: white;
   position: relative;
   top: 12rem;
@@ -402,7 +404,7 @@ html {
   font-size: 1.8rem;
   line-height: 2rem;
   text-decoration: none;
-  box-shadow: 0px 1px 3px 2px #b8b2b2;
+  box-shadow: 0 6px 13px 0 rgba(0, 37, 46, 0.22);
 }
 footer {
   padding-top: 20rem;
@@ -423,8 +425,22 @@ footer .footer-wrapper {
     padding-right: 5%;
   }
 }
-footer .footer-wrapper img {
+footer .footer-wrapper .logo_big {
   padding-bottom: 2rem;
+}
+@media (max-width:600px) {
+  footer .footer-wrapper .logo_big {
+    display: none;
+  }
+}
+footer .footer-wrapper .logo_small {
+  display: none;
+}
+@media (max-width:600px) {
+  footer .footer-wrapper .logo_small {
+    display: inline;
+    padding-bottom: 2rem;
+  }
 }
 footer .footer-wrapper .footer-content {
   display: flex;
@@ -470,8 +486,9 @@ footer .footer-wrapper .footer-content .footer-big-col li:nth-child(3) {
 }
 @media (max-width:600px) {
   footer .footer-wrapper .footer-content .footer-big-col {
-    padding-left: 5%;
+    padding-left: 8%;
     padding-bottom: 2rem;
+    max-width: 100%;
   }
 }
 footer .footer-wrapper .footer-content .footer-sm-col {
@@ -501,17 +518,25 @@ footer .footer-wrapper .footer-content .footer-sm-col .footer-link {
     padding-right: 0;
   }
 }
-footer .footer-wrapper .footer-content .footer-sm-col .icon img {
-  width: 20%;
-  height: 20%;
+footer .footer-wrapper .footer-content .icons {
+  flex-grow: 1;
+}
+@media (max-width:600px) {
+  footer .footer-wrapper .footer-content .icons {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+footer .footer-wrapper .footer-content .icons .icon {
   padding: 1rem;
+  max-height: 100%;
 }
 footer .footer-wrapper p {
   float: right;
   padding-top: 2rem;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   color: white;
 }
 @media (max-width:600px) {
