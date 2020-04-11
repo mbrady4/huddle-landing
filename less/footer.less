@@ -39,6 +39,10 @@ footer {
                 max-width: 300px;
                 padding-left:3rem;
 
+                @media @tablet {
+                    max-width:250px;
+                }
+
                 li:nth-child(1) {
                     list-style-image: url("../images/icon-location.svg");
                     padding-left:1rem;
@@ -63,6 +67,11 @@ footer {
             .footer-sm-col {
                 flex-grow: 1;
                 padding-left: 5%;
+
+                @media @tablet{
+                    padding-right:0;
+                    padding-left:2%;
+                }
                 
                 .footer-link {
                     display:flex;
@@ -73,6 +82,12 @@ footer {
                     text-decoration: none;
                     font-size: 1.6rem;
                     color: white;
+
+                    @media @tablet {
+                        padding-left:0;
+                        font-size:1.4rem;
+                        padding-right:0;
+                    }
                 }
                 .icon { 
                     img {
